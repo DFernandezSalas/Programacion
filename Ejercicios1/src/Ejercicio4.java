@@ -9,23 +9,19 @@ public class Ejercicio4 {
 		try (Scanner reader = new Scanner(System.in)) {
 			System.out.println("Escribe una palabra para ver si es un palindromo.");
 			String palabra = reader.next();
-			System.out.println(palabra);
 			String stringInvertido = "";
-			int contador = 0;
-			for(int indice = palabra.length() - 1;indice <= 0; indice--) {
+			
+			for(int indice = palabra.length() - 1;indice >= 0; indice--) {
 				
-				stringInvertido += palabra.charAt(contador);
-				contador++;
+				stringInvertido += palabra.charAt(indice);
+				
 			}
 			
-			if(palabra == stringInvertido) {
+			if(palabra.equals(stringInvertido)) {
 				System.out.println("La palabra " + palabra + " es un palindromo.");
 			} else {
 				System.out.println("La palabra " + palabra + " no es un palindromo.");
 			}
-			
-			System.out.println(stringInvertido);
-			System.out.println(palabra);
 			
 			
 		} catch (Exception e) {
