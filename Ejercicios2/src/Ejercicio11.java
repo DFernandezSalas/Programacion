@@ -5,8 +5,8 @@ public class Ejercicio11 {
 	// Simulador de Ruleta, reglas en
 	// https://www.casino.es/ruleta/como-jugar-ruleta/
 	public static void main(String[] args) {
-		int[] rojo = {1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36};
-		int[] negro = {2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35};
+		int[] rojo = { 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 };
+		int[] negro = { 2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35 };
 		Scanner reader = new Scanner(System.in);
 		System.out.println("¿Como quieres realizar tu apuesta?");
 		int apuesta = -1;
@@ -42,8 +42,7 @@ public class Ejercicio11 {
 			respuesta = reader.nextInt();
 			switch (respuesta) {
 			case 1:
-				
-				
+
 				break;
 			case 2:
 				break;
@@ -74,13 +73,13 @@ public class Ejercicio11 {
 		}
 		System.out.println("Final");
 	}
-	
+
 	public static int ganador() {
 		double numeroGanador = Math.random() * 37;
-        int numeroGanador2 = (int) numeroGanador;
-        return numeroGanador2;
+		int numeroGanador2 = (int) numeroGanador;
+		return numeroGanador2;
 	}
-	
+
 	public static void apuesta(int apuesta, int multiplicador) {
 		int numeroganador = ganador();
 		if (apuesta == numeroganador) {
@@ -89,10 +88,10 @@ public class Ejercicio11 {
 			System.out.println("Has perido");
 		}
 	}
-	
+
 	public static void apuesta(int[] apuesta, int multiplicador) {
 		int numeroganador = ganador();
-		
+
 	}
 
 }
