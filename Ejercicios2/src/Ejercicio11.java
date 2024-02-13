@@ -41,6 +41,7 @@ public class Ejercicio11 {
 			System.out.print("Respuesta: ");
 			respuesta = reader.nextInt();
 			
+			
 			switch (respuesta) {
 			case 1:
 
