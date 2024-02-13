@@ -40,6 +40,7 @@ public class Ejercicio11 {
 			System.out.println("2. Negro");
 			System.out.print("Respuesta: ");
 			respuesta = reader.nextInt();
+			
 			switch (respuesta) {
 			case 1:
 
