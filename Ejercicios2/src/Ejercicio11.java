@@ -27,19 +27,19 @@ public class Ejercicio11 {
 				}
 			} while (fichasSuficientes == false);
 			System.out.println("¿Como quieres realizar tu apuesta?");
-			System.out.println("0. Cobrar");
-			System.out.println(" 1. Pleno");
-			System.out.println(" 2. Rojo/Negro");
-			System.out.println(" 3. Par/Impar ");
-			System.out.println(" 4. Pasa/Falta");
-			System.out.println(" 5. Docena");
-			System.out.println(" 6. Columna");
-			System.out.println(" 7. Dos docenas");
-			System.out.println(" 8. Dos columnas");
-			System.out.println(" 9. Seisena");
-			System.out.println("10. Cuadro");
-			System.out.println("11. Transversal");
-			System.out.println("12. Caballo");
+			System.out.println(" 0.Cobrar");
+			System.out.println(" 1.Pleno");
+			System.out.println(" 2.Rojo/Negro");
+			System.out.println(" 3.Par/Impar ");
+			System.out.println(" 4.Pasa/Falta");
+			System.out.println(" 5.Docena");
+			System.out.println(" 6.Columna");
+			System.out.println(" 7.Dos docenas");
+			System.out.println(" 8.Dos columnas");
+			System.out.println(" 9.Seisena");
+			System.out.println("10.Cuadro");
+			System.out.println("11.Transversal");
+			System.out.println("12.Caballo");
 			System.out.print("Respuesta: ");
 			int respuesta = reader.nextInt();
 
@@ -55,8 +55,8 @@ public class Ejercicio11 {
 			case 2:
 				multiplicador = 2;
 				do {
-					System.out.println("1. Rojo");
-					System.out.println("2. Negro");
+					System.out.println("1.Rojo");
+					System.out.println("2.Negro");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 2);
@@ -75,8 +75,8 @@ public class Ejercicio11 {
 			case 3:
 				do {
 					multiplicador = 2;
-					System.out.println("1. Par");
-					System.out.println("2. Impar");
+					System.out.println("1.Par");
+					System.out.println("2.Impar");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 2);
@@ -95,8 +95,8 @@ public class Ejercicio11 {
 			case 4:
 				do {
 					multiplicador = 2;
-					System.out.println("1. Pasa");
-					System.out.println("2. Falta");
+					System.out.println("1.Pasa");
+					System.out.println("2.Falta");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 2);
@@ -115,9 +115,9 @@ public class Ejercicio11 {
 			case 5:
 				do {
 					multiplicador = 3;
-					System.out.println("1. Primera docena(1-12)");
-					System.out.println("2. Segunda docena(13-24)");
-					System.out.println("3. Tercera docena(25-36)");
+					System.out.println("1.Primera docena(1-12)");
+					System.out.println("2.Segunda docena(13-24)");
+					System.out.println("3.Tercera docena(25-36)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 3);
@@ -140,9 +140,9 @@ public class Ejercicio11 {
 			case 6:
 				do {
 					multiplicador = 3;
-					System.out.println("1. Primera columna(1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34)");
-					System.out.println("2. Segunda columna(2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35)");
-					System.out.println("3. Tercera columna(3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36)");
+					System.out.println("1.Primera columna(1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34)");
+					System.out.println("2.Segunda columna(2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35)");
+					System.out.println("3.Tercera columna(3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 3);
@@ -165,8 +165,8 @@ public class Ejercicio11 {
 			case 7:
 				do {
 					multiplicador = 1.5;
-					System.out.println("1. Primeras 2 docenas (1-24)");
-					System.out.println("2. Segundas 2 docenas (12-26)");
+					System.out.println("1.Primeras 2 docenas (1-24)");
+					System.out.println("2.Segundas 2 docenas (12-26)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 2);
@@ -187,8 +187,8 @@ public class Ejercicio11 {
 			case 8:
 				do {
 					multiplicador = 1.5;
-					System.out.println("1. Primeras 2 columnas (1-24)");
-					System.out.println("2. Segundas 2 columnas (12-26)");
+					System.out.println("1.Primeras 2 columnas (1-24)");
+					System.out.println("2.Segundas 2 columnas (12-26)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 2);
@@ -209,17 +209,17 @@ public class Ejercicio11 {
 			case 9:
 				do {
 					multiplicador = 6;
-					System.out.println("1. Primera seisena (1-6)");
-					System.out.println("2. Segunda seisena (4-9)");
-					System.out.println("3. Tercera seisena (7-12)");
-					System.out.println("4. Cuarta seisena (10-15)");
-					System.out.println("5. Quinta seisena (13-18)");
-					System.out.println("6. Sexta seisena (16-21)");
-					System.out.println("7. Séptima seisena (19-24)");
-					System.out.println("8. Octava seisena (22-27)");
-					System.out.println("9. Novena seisena (25-30)");
-					System.out.println("10. Décima seisena (28-33)");
-					System.out.println("11. Undécima seisena (31-36)");
+					System.out.print("1.Primera seisena (1-6)");
+					System.out.print(" 2.Segunda seisena (4-9)");
+					System.out.println(" 3.Tercera seisena (7-12)");
+					System.out.print("4.Cuarta seisena (10-15)");
+					System.out.print(" 5.Quinta seisena (13-18)");
+					System.out.println(" 6.Sexta seisena (16-21)");
+					System.out.print("7.Séptima seisena (19-24)");
+					System.out.print(" 8.Octava seisena (22-27)");
+					System.out.println(" 9.Novena seisena (25-30)");
+					System.out.print("10.Décima seisena (28-33)");
+					System.out.println(" 11.Undécima seisena (31-36)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 11);
@@ -274,31 +274,31 @@ public class Ejercicio11 {
 				do {
 					multiplicador = 9;
 
-					System.out.println("1. Primer cuadro (1, 2, 4, 5)");
-					System.out.println("2. Segundo cuadro (2, 3, 5, 6)");
-					System.out.println("3. Tercer cuadro (4, 5, 7, 8)");
-					System.out.println("4. Cuarto cuadro (5, 6, 8, 9)");
-					System.out.println("5. Quinto cuadro (7, 8, 10, 11)");
-					System.out.println("6. Sexto cuadro (8, 9, 11, 12)");
-					System.out.println("7. Séptimo cuadro (10, 11, 13, 14)");
-					System.out.println("8. Octavo cuadro (11, 12, 14, 15)");
-					System.out.println("9. Noveno cuadro (13, 14, 16, 17)");
-					System.out.println("10. Décimo cuadro (14, 15, 17, 18)");
-					System.out.println("11. Undécimo cuadro (16, 17, 19, 20)");
-					System.out.println("12. Duodécimo cuadro (17, 18, 20, 21)");
-					System.out.println("13. Decimotercer cuadro (19, 20, 22, 23)");
-					System.out.println("14. Decimocuarto cuadro (20, 21, 23, 24)");
-					System.out.println("15. Decimoquinto cuadro (22, 23, 25, 26)");
-					System.out.println("16. Decimosexto cuadro (23, 24, 26, 27)");
-					System.out.println("17. Decimoséptimo cuadro (25, 26, 28, 29)");
-					System.out.println("18. Decimoctavo cuadro (26, 27, 29, 30)");
-					System.out.println("19. Decimonoveno cuadro (28, 29, 31, 32)");
-					System.out.println("20. Vigésimo cuadro (29, 30, 32, 33)");
-					System.out.println("21. Vigésimo primer cuadro (31, 32, 34, 35)");
-					System.out.println("22. Vigésimo segundo cuadro (32, 33, 35, 36)");
+					System.out.print("1. Primer cuadro (1, 2, 4, 5)");
+					System.out.print(" 2. Segundo cuadro (2, 3, 5, 6)");
+					System.out.print(" 3. Tercer cuadro (4, 5, 7, 8)");
+					System.out.print(" 4. Cuarto cuadro (5, 6, 8, 9)");
+					System.out.print(" 5. Quinto cuadro (7, 8, 10, 11)");
+					System.out.print(" 6. Sexto cuadro (8, 9, 11, 12)");
+					System.out.println(" 7. Séptimo cuadro (10, 11, 13, 14)");
+					System.out.print("8. Octavo cuadro (11, 12, 14, 15)");
+					System.out.print(" 9. Noveno cuadro (13, 14, 16, 17)");
+					System.out.print(" 10. Décimo cuadro (14, 15, 17, 18)");
+					System.out.print(" 11. Undécimo cuadro (16, 17, 19, 20)");
+					System.out.print(" 12. Duodécimo cuadro (17, 18, 20, 21)");
+					System.out.print(" 13. Decimotercer cuadro (19, 20, 22, 23)");
+					System.out.println(" 14. Decimocuarto cuadro (20, 21, 23, 24)");
+					System.out.print("15. Decimoquinto cuadro (22, 23, 25, 26)");
+					System.out.print(" 16. Decimosexto cuadro (23, 24, 26, 27)");
+					System.out.print(" 17. Decimoséptimo cuadro (25, 26, 28, 29)");
+					System.out.print(" 18. Decimoctavo cuadro (26, 27, 29, 30)");
+					System.out.print(" 19. Decimonoveno cuadro (28, 29, 31, 32)");
+					System.out.print(" 20. Vigésimo cuadro (29, 30, 32, 33)");
+					System.out.print(" 21. Vigésimo primer cuadro (31, 32, 34, 35)");
+					System.out.println(" 22. Vigésimo segundo cuadro (32, 33, 35, 36)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
-				} while (respuesta < 1 || respuesta > 11);
+				} while (respuesta < 1 || respuesta > 22);
 				switch (respuesta) {
 				case 1:
 					int[] primerCuadro = { 1, 2, 4, 5 };
@@ -393,23 +393,23 @@ public class Ejercicio11 {
 			case 11:
 				do {
 					multiplicador = 18;
-					System.out.println("1. Transversal 1 (0, 1, 2");
-					System.out.println("2. Transversal 2 (0, 2, 3");
-					System.out.println("1. Transversal 1 (1, 2, 3");
-					System.out.println("2. Transversal 2 (4, 5, 6");
-					System.out.println("1. Transversal 1 (7, 8, 9");
-					System.out.println("2. Transversal 2 (10, 11, 12");
-					System.out.println("1. Transversal 1 (13, 14, 15");
-					System.out.println("2. Transversal 2 (16, 17, 18");
-					System.out.println("1. Transversal 1 (19, 20, 21");
-					System.out.println("2. Transversal 2 (22, 23, 24");
-					System.out.println("1. Transversal 1 (25, 26, 27");
-					System.out.println("2. Transversal 2 (28, 29, 30");
-					System.out.println("1. Transversal 1 (31, 32, 33");
-					System.out.println("2. Transversal 2 (34, 35, 36");
+					System.out.print("1.Transversal 1 (0, 1, 2)");
+					System.out.print(" 2.Transversal 2 (0, 2, 3)");
+					System.out.print(" 3.Transversal 3 (1, 2, 3)");
+					System.out.print(" 4.Transversal 4 (4, 5, 6)");
+					System.out.print(" 5.Transversal 5 (7, 8, 9)");
+					System.out.print(" 6.Transversal 6 (10, 11, 12)");
+					System.out.println(" 7.Transversal 7 (13, 14, 15)");
+					System.out.print("8.Transversal 8 (16, 17, 18)");
+					System.out.print(" 9.Transversal 9 (19, 20, 21)");
+					System.out.print(" 10.Transversal 10 (22, 23, 24)");
+					System.out.print(" 11.Transversal 11 (25, 26, 27)");
+					System.out.print(" 12.Transversal 12 (28, 29, 30)");
+					System.out.print(" 13.Transversal 13 (31, 32, 33)");
+					System.out.println(" 14.Transversal 14 (34, 35, 36)");
 					System.out.print("Respuesta: ");
 					respuesta = reader.nextInt();
-				} while (respuesta < 1 || respuesta > 2);
+				} while (respuesta < 1 || respuesta > 14);
 				switch (respuesta) {
 				case 1:
 					int[] transversal1 = { 0, 1, 2 };
@@ -419,73 +419,120 @@ public class Ejercicio11 {
 					int[] transversal2 = { 0, 2, 3 };
 					multiplicador = apuesta(transversal2, multiplicador);
 					break;
-				default:
+				case 3:
+					int[] transversal3 = { 1, 2, 3 };
+					multiplicador = apuesta(transversal3, multiplicador);
+					break;
+				case 4:
+					int[] transversal4 = { 4, 5, 6 };
+					multiplicador = apuesta(transversal4, multiplicador);
+					break;
+				case 5:
+					int[] transversal5 = { 7, 8, 9 };
+					multiplicador = apuesta(transversal5, multiplicador);
+					break;
+				case 6:
+					int[] transversal6 = { 10, 11, 12 };
+					multiplicador = apuesta(transversal6, multiplicador);
+					break;
+				case 7:
+					int[] transversal7 = { 13, 14, 15 };
+					multiplicador = apuesta(transversal7, multiplicador);
+					break;
+				case 8:
+					int[] transversal8 = { 16, 17, 18 };
+					multiplicador = apuesta(transversal8, multiplicador);
+					break;
+				case 9:
+					int[] transversal9 = { 19, 20, 21 };
+					multiplicador = apuesta(transversal9, multiplicador);
+					break;
+				case 10:
+					int[] transversal10 = {22, 23, 24 };
+					multiplicador = apuesta(transversal10, multiplicador);
+					break;
+				case 11:
+					int[] transversal11 = { 25, 26, 27 };
+					multiplicador = apuesta(transversal11, multiplicador);
+					break;
+				case 12:
+					int[] transversal12 = { 28, 29, 30 };
+					multiplicador = apuesta(transversal12, multiplicador);
+					break;
+				case 13:
+					int[] transversal13 = { 31, 32, 33 };
+					multiplicador = apuesta(transversal13, multiplicador);
+					break;
+				case 14:
+					int[] transversal14 = { 34, 35, 36 };
+					multiplicador = apuesta(transversal14, multiplicador);
+					break;
 				}
 				break;
 			case 12:
 				do {
 					multiplicador = 18;
-					System.out.println("1. Caballo1 (0, 1)");
-					System.out.println("2. Caballo2 (0, 2)");
-					System.out.println("3. Caballo3 (0, 3)");
-					System.out.println("4. Caballo4 (1, 2)");
-					System.out.println("5. Caballo5 (1, 4)");
-					System.out.println("6. Caballo6 (2, 3)");
-					System.out.println("7. Caballo7 (2, 5)");
-					System.out.println("8. Caballo8 (3, 6)");
-					System.out.println("9. Caballo9 (4, 5)");
-					System.out.println("10. Caballo10 (4, 7)");
-					System.out.println("11. Caballo11 (5, 6)");
-					System.out.println("12. Caballo12 (5, 8)");
-					System.out.println("13. Caballo13 (6, 9)");
-					System.out.println("14. Caballo14 (7, 8)");
-					System.out.println("15. Caballo15 (7, 10)");
-					System.out.println("16. Caballo16 (8, 9)");
-					System.out.println("17. Caballo17 (8, 11)");
-					System.out.println("18. Caballo18 (9, 12)");
-					System.out.println("19. Caballo19 (10, 11)");
-					System.out.println("20. Caballo20 (10, 13)");
-					System.out.println("21. Caballo21 (11, 12)");
-					System.out.println("22. Caballo22 (11, 14)");
-					System.out.println("23. Caballo23 (12, 15)");
-					System.out.println("24. Caballo24 (13, 14)");
-					System.out.println("25. Caballo25 (13, 16)");
-					System.out.println("26. Caballo26 (14, 15)");
-					System.out.println("27. Caballo27 (14, 17)");
-					System.out.println("28. Caballo28 (15, 18)");
-					System.out.println("29. Caballo29 (16, 17)");
-					System.out.println("30. Caballo30 (16, 19)");
-					System.out.println("31. Caballo31 (17, 18)");
-					System.out.println("32. Caballo32 (17, 20)");
-					System.out.println("33. Caballo33 (18, 21)");
-					System.out.println("34. Caballo34 (19, 20)");
-					System.out.println("35. Caballo35 (19, 22)");
-					System.out.println("36. Caballo36 (20, 21)");
-					System.out.println("37. Caballo37 (20, 23)");
-					System.out.println("38. Caballo38 (21, 24)");
-					System.out.println("39. Caballo39 (22, 23)");
-					System.out.println("40. Caballo40 (22, 25)");
-					System.out.println("41. Caballo41 (23, 24)");
-					System.out.println("42. Caballo42 (23, 26)");
-					System.out.println("43. Caballo43 (24, 27)");
-					System.out.println("44. Caballo44 (25, 26)");
-					System.out.println("45. Caballo45 (25, 28)");
-					System.out.println("46. Caballo46 (26, 27)");
-					System.out.println("47. Caballo47 (26, 29)");
-					System.out.println("48. Caballo48 (27, 30)");
-					System.out.println("49. Caballo49 (28, 29)");
-					System.out.println("50. Caballo50 (28, 31)");
-					System.out.println("51. Caballo51 (29, 30)");
-					System.out.println("52. Caballo52 (29, 32)");
-					System.out.println("53. Caballo53 (30, 33)");
-					System.out.println("54. Caballo54 (31, 32)");
-					System.out.println("55. Caballo55 (31, 34)");
-					System.out.println("56. Caballo56 (32, 33)");
-					System.out.println("57. Caballo57 (32, 35)");
-					System.out.println("58. Caballo58 (33, 36)");
-					System.out.println("59. Caballo59 (34, 35)");
-					System.out.println("60. Caballo60 (35, 36)");
-					System.out.println("Respuesta : ");
+					System.out.print("1.Caballo1 (0, 1)");
+					System.out.print(" 2.Caballo2 (0, 2)");
+					System.out.print(" 3.Caballo3 (0, 3)");
+					System.out.print(" 4.Caballo4 (1, 2)");
+					System.out.print(" 5.Caballo5 (1, 4)");
+					System.out.print(" 6.Caballo6 (2, 3)");
+					System.out.print(" 7.Caballo7 (2, 5)");
+					System.out.print(" 8.Caballo8 (3, 6)");
+					System.out.print(" 9.Caballo9 (4, 5)");
+					System.out.println(" 10.Caballo10 (4, 7)");
+					System.out.print("11.Caballo11 (5, 6)");
+					System.out.print(" 12.Caballo12 (5, 8)");
+					System.out.print(" 13.Caballo13 (6, 9)");
+					System.out.print(" 14.Caballo14 (7, 8)");
+					System.out.print(" 15.Caballo15 (7, 10)");
+					System.out.print(" 16.Caballo16 (8, 9)");
+					System.out.print(" 17.Caballo17 (8, 11)");
+					System.out.print(" 18.Caballo18 (9, 12)");
+					System.out.print(" 19.Caballo19 (10, 11)");
+					System.out.println(" 20.Caballo20 (10, 13)");
+					System.out.print("21.Caballo21 (11, 12)");
+					System.out.print(" 22.Caballo22 (11, 14)");
+					System.out.print(" 23.Caballo23 (12, 15)");
+					System.out.print(" 24.Caballo24 (13, 14)");
+					System.out.print(" 25.Caballo25 (13, 16)");
+					System.out.print(" 26.Caballo26 (14, 15)");
+					System.out.print(" 27.Caballo27 (14, 17)");
+					System.out.print(" 28.Caballo28 (15, 18)");
+					System.out.print(" 29.Caballo29 (16, 17)");
+					System.out.println(" 30.Caballo30 (16, 19)");
+					System.out.print("31.Caballo31 (17, 18)");
+					System.out.print(" 32.Caballo32 (17, 20)");
+					System.out.print(" 33.Caballo33 (18, 21)");
+					System.out.print(" 34.Caballo34 (19, 20)");
+					System.out.print(" 35.Caballo35 (19, 22)");
+					System.out.print(" 36.Caballo36 (20, 21)");
+					System.out.print(" 37.Caballo37 (20, 23)");
+					System.out.print(" 38.Caballo38 (21, 24)");
+					System.out.print(" 39.Caballo39 (22, 23)");
+					System.out.println(" 40.Caballo40 (22, 25)");
+					System.out.print("41.Caballo41 (23, 24)");
+					System.out.print(" 42.Caballo42 (23, 26)");
+					System.out.print(" 43.Caballo43 (24, 27)");
+					System.out.print(" 44.Caballo44 (25, 26)");
+					System.out.print(" 45.Caballo45 (25, 28)");
+					System.out.print(" 46.Caballo46 (26, 27)");
+					System.out.print(" 47.Caballo47 (26, 29)");
+					System.out.print(" 48.Caballo48 (27, 30)");
+					System.out.print(" 49.Caballo49 (28, 29)");
+					System.out.println(" 50.Caballo50 (28, 31)");
+					System.out.print("51.Caballo51 (29, 30)");
+					System.out.print(" 52.Caballo52 (29, 32)");
+					System.out.print(" 53.Caballo53 (30, 33)");
+					System.out.print(" 54.Caballo54 (31, 32)");
+					System.out.print(" 55.Caballo55 (31, 34)");
+					System.out.print(" 56.Caballo56 (32, 33)");
+					System.out.print(" 57.Caballo57 (32, 35)");
+					System.out.print(" 58.Caballo58 (33, 36)");
+					System.out.print(" 59.Caballo59 (34, 35)");
+					System.out.println(" 60.Caballo60 (35, 36)");
+					System.out.print("Respuesta : ");
 					respuesta = reader.nextInt();
 				} while (respuesta < 1 || respuesta > 60);
 				switch (respuesta) {
