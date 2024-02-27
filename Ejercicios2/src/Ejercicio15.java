@@ -4,11 +4,7 @@ public class Ejercicio15 {
 	// Juego de Piedra, Papel o Tijeras
 	public static void main(String[] args) {
 		boolean salir = false;
-		boolean juego = false;
-		int jPuntuacion = 0;
-		int jPuntuacionSet = 0;
-		int cpuPuntuacion = 0;
-		int cpuPuntuacionSet = 0;
+		int[] score = {0, 0, 0, 0, 0}; // score[0]jPuntuacion, scrore[1]jPuntuacionSet, score[2]cpuPuntuacion, score[3]cpuPuntuacionSet, score[4]acabaElJuego
 		Scanner reader = new Scanner(System.in);
 		int respuesta = 0;
 		int seleccion = 0;
@@ -22,10 +18,10 @@ public class Ejercicio15 {
 			switch (respuesta) {
 			case 1: {
 				limpiar();
-				while (juego == false) {
+				while (score[4] == 0) {
 					do {
-						System.out.println("MARCADOR (PUNTOS/SETS)\nJugador = " + jPuntuacion + "/" + jPuntuacionSet
-								+ "\t CPU = " + cpuPuntuacion + "/" + cpuPuntuacionSet);
+						System.out.println("MARCADOR (PUNTOS/SETS)\nJugador = " + score[0] + "/" + score[1]
+								+ "\t CPU = " + score[2] + "/" + score[3]);
 						System.out.print("1.Piedra \n2.Papel \n3.Tijera \nRespuesta: ");
 						seleccion = reader.nextInt();
 					} while (seleccion < 1 || seleccion > 3);
@@ -40,13 +36,13 @@ public class Ejercicio15 {
 						} else if (cpu == 1) {
 							System.out.println("===========CPU GANA=============");
 							System.out.println("Jugador-> Piedra vs Papel <-CPU");
-							cpuPuntuacion++;
+							score[2]++;
 						} else if (cpu == 2) {
 							System.out.println("===========JUGADOR GANA=============");
 							System.out.println("Jugador-> Piedra vs Tijera <-CPU");
-							jPuntuacion++;
+							score[0]++;
 						}
-						comprobar(jPuntuacion, cpuPuntuacion, jPuntuacionSet, cpuPuntuacionSet);
+						comprobar(score);
 						break;
 					}
 					case 2: {
@@ -59,13 +55,13 @@ public class Ejercicio15 {
 						} else if (cpu == 0) {
 							System.out.println("=========JUGADOR GANA===========");
 							System.out.println("Jugador-> Papel vs Piedra <-CPU");
-							jPuntuacion++;
+							score[0]++;
 						} else if (cpu == 2) {
 							System.out.println("===========CPU GANA=============");
 							System.out.println("Jugador-> Papel vs Tijera <-CPU");
-							cpuPuntuacion++;
+							score[2]++;
 						}
-						comprobar(jPuntuacion, cpuPuntuacion, jPuntuacionSet, cpuPuntuacionSet);
+						comprobar(score);
 						break;
 					}
 					case 3:
@@ -78,13 +74,13 @@ public class Ejercicio15 {
 						} else if (cpu == 0) {
 							System.out.println("===========CPU GANA=============");
 							System.out.println("Jugador-> Tijera vs Piedra <-CPU");
-							cpuPuntuacion++;
+							score[2]++;
 						} else if (cpu == 1) {
 							System.out.println("=========JUGADOR GANA===========");
 							System.out.println("Jugador-> Tijera vs Papel <-CPU");
-							jPuntuacion++;
+							score[0]++;
 						}
-						comprobar(jPuntuacion, cpuPuntuacion, jPuntuacionSet, cpuPuntuacionSet);
+						comprobar(score);
 						break;
 					}
 				}
@@ -113,29 +109,31 @@ public class Ejercicio15 {
 		return jugada;
 	}
 
-	public static int comprobar(int jPuntuacion, int cpuPuntuacion, int jPuntuacionSet, int cpuPuntuacionSet) {
-		if (jPuntuacion == 5) {
+	public static int[] comprobar(int[] score) {
+		if (score[0] == 5) {
 			System.out.println("SET para el JUGADOR");
-			jPuntuacion = 0;
-			cpuPuntuacion = 0;
-			jPuntuacionSet++;
-			if (jPuntuacionSet == 3) {
+			score[0] = 0;
+			score[2] = 0;
+			score[1]++;
+			if (score[1] == 3) {
 				System.out.println("JUGADOR GANA el PARTIDO");
-				cpuPuntuacionSet = 0;
-				jPuntuacionSet = 0;
+				score[3] = 0;
+				score[1] = 0;
+				score[4] = 1;
 			}
 		}
-		if (cpuPuntuacion == 5) {
+		if (score[2] == 5) {
 			System.out.println("SET para la CPU");
-			jPuntuacion = 0;
-			cpuPuntuacion = 0;
-			cpuPuntuacionSet++;
-			if (cpuPuntuacionSet == 3) {
+			score[0] = 0;
+			score[2] = 0;
+			score[3]++;
+			if (score[3] == 3) {
 				System.out.println("CPU GANA el PARTIDO");
-				cpuPuntuacionSet = 0;
-				jPuntuacionSet = 0;
+				score[3] = 0;
+				score[1] = 0;
+				score[4] = 1;
 			}
 		}
-		return new comprobar(jPuntuacion, cpuPuntuacion, jPuntuacionSet, cpuPuntuacionSet);
+		return score;
 	}
 }
