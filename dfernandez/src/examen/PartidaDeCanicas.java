@@ -12,7 +12,6 @@ public class PartidaDeCanicas {
 		String estadoJ2 = "Inicial";
 		boolean turno;
 		boolean ganador = false;
-		int contador = 0;
 		posJ1 = posicionInicial();
 		posJ2 = posicionInicial();
 		turno = quienEmpieza();
@@ -44,7 +43,6 @@ public class PartidaDeCanicas {
 				estadoJ1 = estado(alcanza, estadoJ1, posJ1, posJ2, posJ1);
 				System.out.println("Posicion actual de las canicas en el eje x, Jugador1: " + posJ1 + " Estado: "
 						+ estadoJ1 + " y Jugador2: " + posJ2 + " Estado: " + estadoJ2);
-				contador++;
 				if (alcanza == true) {
 
 				} else {
@@ -73,7 +71,6 @@ public class PartidaDeCanicas {
 				estadoJ2 = estado(alcanza, estadoJ2, posJ1, posJ2, posJ2);
 				System.out.println("Posicion actual de las canicas en el eje x, Jugador1: " + posJ1 + " Estado: "
 						+ estadoJ1 + " y Jugador2: " + posJ2 + " Estado: " + estadoJ2);
-				contador++;
 				if (alcanza == true) {
 
 				} else {
