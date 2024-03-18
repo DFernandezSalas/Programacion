@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ArrayList"/>
+	<classpathentry kind="src" path="HashMap"/>
+	<classpathentry kind="src" path="HashSet"/>
+	<classpathentry kind="src" path="PriorityQueue"/>
+	<classpathentry kind="src" path="Queue"/>
+	<classpathentry kind="src" path="Stack"/>
+	<classpathentry kind="src" path="EjercicioEstructuras"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
