@@ -1,5 +1,5 @@
 
-public class ArrayListPrueba {
+public class StackPrueba {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -8,7 +8,7 @@ public class ArrayListPrueba {
 		Alumno a3 = new Alumno("Pepe");
 		Alumno a4 = new Alumno("David");
 		
-		EjArrayList ej = new EjArrayList();
+		EjStack ej = new EjStack();
 		
 		ej.agrega(a1);
 		ej.agrega(a2);
@@ -17,10 +17,9 @@ public class ArrayListPrueba {
 		ej.toString();
 		System.out.println(ej.obten(2));
 		ej.elimina(2);
-		System.out.println(ej.contiene(a4));
 		ej.toString();
+		System.out.println(ej.contiene(a4));
 		System.out.println(ej.tamano());
-		
 	}
 
 }

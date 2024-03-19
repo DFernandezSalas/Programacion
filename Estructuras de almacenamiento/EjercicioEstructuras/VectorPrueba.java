@@ -10,7 +10,9 @@ public class VectorPrueba {
 
         lista.agrega(a1);
         lista.agrega(a2);
-        lista.agrega(3, a3);
+        System.out.println( lista.toString());
+        lista.agrega(2, a3);
+        System.out.println( lista.toString());
         System.out.println(lista.obten(4));
         lista.elimina(2);
         System.out.println(lista.contiene(a4));
