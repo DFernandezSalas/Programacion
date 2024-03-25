@@ -1,15 +1,15 @@
 import java.util.Arrays;
 
 public class Vector {
-	private Alumno[] alumnos = new Alumno[100];
+	private Alumno[] alumnos = new Alumno[100000000];
 	private int totalDeAlumnos = 0;
 
 	public void agrega(Alumno alumno) {
 		// recibe a un alumno
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < alumnos.length; i++) {
 			if (alumnos[i] == null) {
 				alumnos[i] = alumno;
-				i = 100;
+				i = alumnos.length;
 			}
 		}
 	}
@@ -17,7 +17,7 @@ public class Vector {
 	public void agrega(int posicion, Alumno alumno) {
 		// agrega al Alumno en la posición indicada
 		if (this.alumnos[posicion - 1] != null) {
-			for (int i = 99; i >= posicion - 1; i--) {
+			for (int i = alumnos.length - 1; i >= posicion - 1; i--) {
 				if (this.alumnos[i] != null) {
 					alumnos[i + 1] = alumnos[i];
 				} else {
@@ -46,7 +46,7 @@ public class Vector {
 
 	public boolean contiene(Alumno alumno) {
 		// averigua si el estudiante está en la lista
-		for (int i = 0; i<100;i++) {
+		for (int i = 0; i < 100; i++) {
 			if (alumnos[i] == alumno) {
 				return true;
 			}
@@ -56,7 +56,7 @@ public class Vector {
 
 	public int tamano() {
 		// devuelve la cantidad de alumnos
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < alumnos.length; i++) {
 			if (this.alumnos[i] != null) {
 				totalDeAlumnos++;
 			} else {
